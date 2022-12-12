@@ -1,12 +1,28 @@
 /* Utils */
 
 .container {
-	max-width: 1200px;
-	margin: 0 auto;
+	height: 100vh;
+	background-color: black;
 }
 
-.clearfix::after {
+.wrapper {
+	width: 90vw;
+	height: calc(100vh - 20vh);
+	margin: auto;
+	
+	/* background-color: black; */
+
+	/* debug */
+
+	background-color: palevioletred;
+}
+
+/* .clearfix::after {
 	content: '';
 	clear: both;
 	display: table;
+} */
+
+.d-flex {
+	display: flex;
 }
