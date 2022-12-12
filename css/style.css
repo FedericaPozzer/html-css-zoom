@@ -1,7 +1,7 @@
 .nav-bar {
     border-top: 15px solid #202020;
     justify-content: end;
-    height: 10vh;
+    height: 8vh;
 }
 
 .nav-bar > a {
@@ -12,4 +12,30 @@
     background-color: grey;
     border-radius: 3px;
     height: 24px;
+}
+
+.wrapper {
+    flex-wrap: wrap;
+}
+
+.card {
+    height: calc(100% / 5);
+    width: calc(100% / 7);
+    background-color: aqua;
+    position: relative;
+
+}
+
+.card > img {
+    height: 100%;
+    width: 100%;
+    border: 3px solid black;
+}
+
+.card > span {
+    position: absolute;
+    bottom: 3px;
+    padding: 3px 7px;
+    color: #ffffff;
+    backdrop-filter: blur(10px);
 }
