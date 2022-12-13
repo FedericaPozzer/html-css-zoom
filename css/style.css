@@ -1,7 +1,11 @@
+/* Nav bar (header) */
+
 .nav-bar {
     border-top: 15px solid #202020;
-    justify-content: end;
-    height: 8vh;
+    text-align: right;
+    padding-top: 7px;
+    height: var(--nav-bar-height);
+    font-size: 12px;
 }
 
 .nav-bar > a {
@@ -14,6 +18,8 @@
     height: 24px;
 }
 
+/* Main */
+
 .wrapper {
     flex-wrap: wrap;
 }
@@ -21,7 +27,6 @@
 .card {
     height: calc(100% / 5);
     width: calc(100% / 7);
-    background-color: aqua;
     position: relative;
 
 }
@@ -38,4 +43,47 @@
     padding: 3px 7px;
     color: #ffffff;
     backdrop-filter: blur(10px);
+    margin-left: 3px;
+}
+
+/* Footer */
+
+.footer-nav {
+    height: var(--footer-height);
+    background-color: #222222;
+    color: #ffffff;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    justify-content: space-between;
+}
+
+.footer-nav > div > * {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto 7px auto 3px;
+}
+
+footer span, footer button {
+    font-size: 12px;
+}
+
+footer i {
+    font-size: 25px;
+    padding: 7px;
+}
+
+footer button {
+    height: var(--footer-height);
+    background-color: #4a4a4a;
+    border: none;
+    color: red;
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+.icon-active {
+    color: #4ac800;
 }

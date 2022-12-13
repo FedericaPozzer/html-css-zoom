@@ -3,27 +3,20 @@
 .container {
 	height: 100vh;
 	background-color: black;
+	position: relative;
 }
 
 .wrapper {
 	width: 90vw;
-	height: calc(100vh - 20vh);
+	height: calc(100vh - var(--nav-bar-height) - var(--footer-height) - 20px);
 	margin: auto;
-	
-	/* background-color: black; */
-
-	/* debug */
-
-	background-color: palevioletred;
 }
-
-/* .clearfix::after {
-	content: '';
-	clear: both;
-	display: table;
-} */
 
 .d-flex {
 	display: flex;
 }
 
+:root {
+    --nav-bar-height: 80px;
+    --footer-height: 80px;
+}
